@@ -21,6 +21,9 @@ app.use(ExpressAPILogMiddleware(logger, { request: true }));
 const usersRoute = require('./routes/users');
 app.use('/users', usersRoute);
 
+const kweetsRoute = require('./routes/kweets');
+app.use('/kweets', kweetsRoute);
+
 
 
 //Routes

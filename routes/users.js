@@ -21,7 +21,7 @@ router.get('/all', function(req, res) {
 });
 
 router.post('/', jsonParser, (req, res) => {
-    axios.post('http://kwetter.nadym.nl:3000/users/', req.data)
+    axios.post('http://kwetter.nadym.nl:3000/users/', req.body)
     .then((response) => {
         res.json(response.data)
     })
