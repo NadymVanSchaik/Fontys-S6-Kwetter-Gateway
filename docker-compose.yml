@@ -1,0 +1,9 @@
+version: '3'
+services:
+  gateway:
+    restart: on-failure
+    image: gateway
+    build: 
+      context: ./
+    ports:
+      - "80:80"
